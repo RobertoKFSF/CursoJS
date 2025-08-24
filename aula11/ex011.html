@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
     <style>
+        body {
+            background-color: gray;
+        }
         #txtpais {
             height: 50px;
             font-size: medium;
@@ -24,9 +27,9 @@
     </style>
 </head>
 <body>
-    <h1>SISTEMA DE MULTAS</h1>
+    <h1>BRASILEIRO OU ESTRANGEIRO?</h1>
     <form action="">
-        <label for="vel">Qual seu país? </label>
+        <label for="pais">Qual seu país? </label>
         <input type="text" name="pais" id="txtpais" required> 
         <input type="button" id="botao" value="Verificar" onclick="Verificar()">
         <div id="res">
