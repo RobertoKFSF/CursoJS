@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        #txtpais {
+            height: 50px;
+            font-size: medium;
+            background-color: lightgray;
+        }
+        #botao {
+            background-color: rgb(154, 235, 255);
+            border-radius: 10px;
+            height: 40px;
+            box-shadow: 1px 1px gray;
+            width: 100px;
+        }
+        #botao:hover {
+            background-color: rgb(1, 180, 180);
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>SISTEMA DE MULTAS</h1>
+    <form action="">
+        <label for="vel">Qual seu país? </label>
+        <input type="text" name="pais" id="txtpais" required> 
+        <input type="button" id="botao" value="Verificar" onclick="Verificar()">
+        <div id="res">
+    </form>
+
+    </div>
+    <script>
+    function Verificar(){
+        var txtpais = document.querySelector('input#txtpais')
+        var res = document.querySelector('div#res')
+        var pais = String(txtpais.value)
+        res.innerHTML = `<p>Você nasceu no(a) <strong>${pais}</strong></p>`
+        pais = pais.toUpperCase()
+        if (pais == 'BRASIL') {
+            res.innerHTML += (`Você é Brasileiro`)
+        } else {
+             res.innerHTML += `<p>Você é estrangeiro!</p>`
+        }
+        }
+    </script>
+</body>
+</html>
