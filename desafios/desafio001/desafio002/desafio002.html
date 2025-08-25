@@ -11,7 +11,8 @@
         <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <div>
+        <div id="perg">
+            <h3 id="msg"></h3>
             <p>Ano de Nascimento: 
                 <input type="number" name="txtano" id="txtano" min="0">
             </p>
@@ -21,8 +22,13 @@
                 <input type="radio" name="radsex" id="fem">
                 <label for="fem">Feminino</label>
             </p>
+            <p>
+                <input type="button" value="Verificar" id="botao" onclick="verificar()">
+            </p>
         </div>
-        <div id="res"></div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
     </section>
     <footer>
         <a href="https://github.com/RobertoKFSF" target="_blank">&copy; RobertoKFSF</a>
