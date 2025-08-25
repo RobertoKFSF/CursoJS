@@ -1,18 +1,20 @@
 function carregar () {
     var msg = document.getElementById('msg')
-    var img = document.getElementById('hora')
+    var img = document.getElementById('imagem')
     var data = new Date()
-    var horas = data.getHours()
-    var min = agora.getMinutes()
-    var seg = agora.getSeconds()
-    msg.innerHTML = `Agora são exatamente ${horas}:${min}:${seg}hrs.`
+    var hora = 8
+    var hora = data.getHours()
+    var min = data.getMinutes()
+    var seg = data.getSeconds()
+    msg.innerHTML = `Agora são exatamente 0${hora}:${min}:${seg}hrs.`
     if (hora < 12 && hora >= 6) {
-    msg.innerHTML('Bom dia!')
+        img.src = 'manha.jpg'
+        document.body.style.background = '#e2cd9f'
     } else if (hora <= 18 && hora >= 12){
-    msg.innerHTML('Boa tarde!')
+        img.src = 'tarde.jpg'
     } else if (hora > 18) {
-    msg.innerHTML('Boa noite!')
+        img.src = 'noite.jpg'
     } else { 
-    msg.innerHTML('Boa Madrugada!')
+        img.src = 'madrugada.jpg'
     }
 }

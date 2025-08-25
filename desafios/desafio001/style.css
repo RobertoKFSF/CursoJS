@@ -22,3 +22,6 @@ img {
     border-radius: 200px;
 
 }
+footer > p {
+    text-align: center;
+}
