@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(61, 81, 255)
+}
+header {
+    color: white;
+    text-align: center;
+}
+section {
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 500px;
+    padding: 15px;
+    height: 700px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+}
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+
+}
