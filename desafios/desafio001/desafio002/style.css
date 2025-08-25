@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgba(0, 0, 255, 0.644)
+    background-color: rgba(122, 80, 0, 0.726)
 }
 h1 {
     text-align: center;
@@ -53,4 +53,9 @@ a:hover {
 }
 #msg {
     text-align: center;
+}
+img {
+    margin-top: 10px;
+    width: 50%;
+    height: 30%;
 }
