@@ -1,4 +1,3 @@
 var pizza = 8
 while (pizza > 0)
-    pizza -= 1
     console.log("Restam " + pizza + " fatias")
