@@ -1,4 +1,20 @@
-var pizza = 8
-while (pizza > 0)
-    console.log("Restam " + pizza + " fatias")
-    pizza -= 1
+var c = 1
+while (c < 6) {
+    console.log('Tudo bem?')
+    c++
+}
+
+
+
+
+
+
+
+
+
+/*console.log('Tudo bem?')
+console.log('Tudo bem?')
+console.log('Tudo bem?')
+console.log('Tudo bem?')
+console.log('Tudo bem?')
+console.log('Tudo bem?')*/
