@@ -9,12 +9,13 @@ function verificar() {
     if (i <= 0 || f <= 0 || p <= 0){
         alert("FALTAM DADOS!")
     } 
-    if (i < f || i < p) {
+    if (f < i || p < i) {
         alert("[ERRO] Verifique os dados e tente novamente!")
     }
     else {
         for (var c=i;c <= f;c += p) {
-            res.innerHTML += `contando`
+            res.innerHTML += `${c} \u{1F449}`
         }
+        res.innerHTML += `\u{1F3C1}`
     }
 }
