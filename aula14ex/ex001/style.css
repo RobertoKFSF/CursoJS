@@ -16,11 +16,11 @@ h1 {
 }
 section {
     background-color: white;
-    height: 70vh;
     width: 70vw;
     margin: auto;
     border-radius: 20px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 .text {
     margin-top: 20px;
@@ -56,4 +56,8 @@ footer > a {
 }
 a:hover {
     text-decoration: underline;
+}
+#res {
+    margin-left: 6px;
+    margin-top: 10px;
 }

@@ -6,13 +6,20 @@ function verificar() {
     var i = Number(inicio.value)
     var f = Number(fim.value)
     var p = Number(passos.value)
-    if (i <= 0 || f <= 0 || p <= 0){
-        alert("FALTAM DADOS!")
+    if (p <= 0){
+        p = 1
     } 
-    if (f < i || p < i) {
+    if (p > f) {
         alert("[ERRO] Verifique os dados e tente novamente!")
     }
+    else if (i >= f){
+        for (var c = i;f<=c;c -= p) {
+            res.innerHTML += `${c} \u{1F449}`
+        }
+        res.innerHTML += `\u{1F3C1}`
+    }
     else {
+        res.innerHTML = ("Contando: ")
         for (var c=i;c <= f;c += p) {
             res.innerHTML += `${c} \u{1F449}`
         }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <form action="caixas">
+                <div id="dinicio">
+                    <label for="" id="">Inicio: </label>
+                    <input type="number" class="text" id="inicio">
+                </div>
+                <div id="dfim">
+                    <label for="" id="">Fim: </label>
+                    <input type="number" class="text" id="fim">
+                </div>
+                <div id="dpassos">
+                    <label for="" id="">Passos: </label>
+                    <input type="number" class="text" id="passos">
+                </div>
+                <div><input type="button" value="Verificar" class="botao" onclick="verificar()"></div>
+            </form>
+        </div>
+        <div id="res">
+            Preparando a contagem...
+        </div>
+    </section>
+    <footer>
+        <a href="https://github.com/RobertoKFSF" target="_blank">&copy; RobertoKFSF</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
