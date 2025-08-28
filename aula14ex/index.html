@@ -8,14 +8,27 @@
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a mensagem
+        <div>
+            <form action="caixas">
+                <div id="dinicio">
+                    <label for="" id="">Inicio: </label>
+                    <input type="number" class="text" id="inicio">
+                </div>
+                <div id="dfim">
+                    <label for="" id="">Fim: </label>
+                    <input type="number" class="text" id="fim">
+                </div>
+                <div id="dpassos">
+                    <label for="" id="">Passos: </label>
+                    <input type="number" class="text" id="passos">
+                </div>
+                <div><input type="button" value="verificar" class="botao"></div>
+            </form>
         </div>
-        <div id="foto">
-            <img id="imagem" src="manha.jpg" alt="">
+        <div>
         </div>
     </section>
     <footer>
