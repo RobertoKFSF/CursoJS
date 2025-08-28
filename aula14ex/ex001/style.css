@@ -16,11 +16,11 @@ h1 {
 }
 section {
     background-color: white;
+    height: 70vh;
     width: 70vw;
     margin: auto;
     border-radius: 20px;
     margin-bottom: 20px;
-    padding-bottom: 20px;
 }
 .text {
     margin-top: 20px;
@@ -29,6 +29,12 @@ section {
     box-shadow: 1px solid black;
     height: 20px;
     text-indent: 10px;
+}
+#dinicio, #dpassos, #dfim {
+    margin-left: 10px;
+}
+#dinicio {
+    margin-top: 20px;
 }
 .botao {
     margin-top: 10px;
@@ -51,7 +57,8 @@ footer > a {
 a:hover {
     text-decoration: underline;
 }
-
-#seltab {
+#res {
     margin-left: 6px;
+    margin-top: 10px;
+    margin-right: 5px;
 }
