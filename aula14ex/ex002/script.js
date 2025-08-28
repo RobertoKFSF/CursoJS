@@ -1,11 +1,18 @@
-function verificar() {
-    var inicio = document.getElementById("inicio")
-    var fim = document.getElementById("fim")
-    var passos = document.getElementById("passos")
-    var res = document.getElementById("res")
-    var i = Number(inicio.value)
-    var f = Number(fim.value)
-    var p = Number(passos.value)
+function tabuada() {
+    var num = document.getElementById("num")
+    var tab = document.getElementById("seltab")
+    if (num.value.lenght <= 0){
+        alert `Por favor digite um número!`
+    }
+    else {
+        var n = Number(num.value)
+        let c = 1
+        while (c <= 10) {
+            let item = document.createElement('option')
+            item.text = `${} x ${}`
+        }
+    }
+    var t = Number(tab.value)
     if (p <= 0){
         p = 1
     } 
