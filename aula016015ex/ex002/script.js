@@ -1,22 +1,31 @@
 var num = document.getElementById("num")
-var lista = document.querySelector("add")
+var add = document.querySelector("add")
 let fim = document.querySelector("fim")
 let valores = []
-function adicionar() {
-    if (num.value < 0 || num.value > 100){
-        alert `Digite um número entre 0 e 100!`
+
+function isNumero(n) {
+        if (isNumero(num.value) < 0 && isNumero(num.value > 100)) {
+        return true
+    } else {
+        return false
     }
-    for (let n in num)
-        if (n == num) {
-            alert `Esse valor ja existe, digite outro!`
-        }
-    else {
+}
+
+function isLista(n, l) {
+    if(l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+function adicionar() {
+    if (num >= 0) {
         valores.push(num.value)
         var n = Number(num.value)
         let c = 1
         let item = document.createElement('option')
         item.text = `O valor adicionado foi ${num}`
-        tab.appendChild(item)
+        add.appendChild(item)
         c++
     }
 }
