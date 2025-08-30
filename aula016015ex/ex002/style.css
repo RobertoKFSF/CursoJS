@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {  
+    background-color: rgb(0, 140, 255);
+}
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+section {
+    background-color: white;
+    width: 70vw;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.text {
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: lightgray;
+    box-shadow: 1px solid black;
+    height: 20px;
+    text-indent: 10px;
+}
+#dinicio, #dpassos, #dfim {
+    margin-left: 10px;
+}
+#dinicio {
+    margin-top: 20px;
+}
+.botao {
+    margin-top: 10px;
+    background-color: rgba(0, 89, 255, 0.822);
+    margin-left: 10px;
+    height: 36px;
+    width: 100px;
+    border-radius: 15px;
+}
+.botao:hover {
+   background-color: rgba(0, 89, 255, 0.959);
+}
+footer > a {
+    margin-left: 44%;
+    text-decoration: none;
+    margin-top: 25px;
+    color: white;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
+}
+#res {
+    margin-left: 6px;
+    margin-top: 10px;
+}
