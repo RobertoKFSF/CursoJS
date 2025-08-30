@@ -7,7 +7,7 @@ console.log(`Nosso vetor é o ${num}`)
 
 let num1 = [2, 4, 6, 1, 5, 9, 10, 12, 53, 32]
 let cont = 0
-for (num[cont]; cont >= 0; cont++) {
-    console.log(`${num[cont]}`)
+for (0; cont < num1.length; cont++) {
+    console.log(`${num1[cont]}`)
 }
 console.log(`FIM DE PROGRAMA!`)
