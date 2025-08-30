@@ -1,4 +1,4 @@
-var num = document.getElementById("input#num")
+var num = document.getElementById("num")
 var lista = document.querySelector("select#add")
 let res = document.querySelector("div#res")
 let valores = []
@@ -11,7 +11,7 @@ function isNumero(n) {
     }
 }
 
-function isLista(n, l) {
+function inLista(n, l) {
     if(l.indexOf(Number(n)) != -1) {
         return true
     } else {
@@ -19,19 +19,17 @@ function isLista(n, l) {
     }
 }
 function adicionar() {
-    if (isNumero(num.value) && !isLista(num.value, valores)) {
-    
+    if (isNumero(num.value) && !inLista(num.value, valores)) {
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado.`
+        lista.appendChild(item)
     } else {
-        alert ("Valor invalido ou ja encontra-se na lista.")
+        alert ('Valor invalido ou ja encontra-se na lista.')
     }
+}
+function finalizar() {
+    res.innerHTML `Ao todo, temos ${num.value.length + 1} cadastrados.`
 }
 
 
-if (num >= 0) {
-    valores.push(num.value)
-    var n = Number(num.value)
-    let c = 1
-    let item = document.createElement('option')
-    item.text = `O valor adicionado foi ${num}`
-    add.appendChild(item)
-    c++ }
