@@ -1,19 +1,22 @@
-function tabuada() {
-    var num = document.getElementById("num")
-    var tab = document.getElementById("seltab")
-    if (num.value.lenght <= 0){
-        alert `Por favor digite um número!`
+var num = document.getElementById("num")
+var lista = document.querySelector("add")
+let fim = document.querySelector("fim")
+let valores = []
+function adicionar() {
+    if (num.value < 0 || num.value > 100){
+        alert `Digite um número entre 0 e 100!`
     }
-    else {
-        var n = Number(num.value)
-        var t = Number(tab.value)
-        let c = 1
-        tab.innerHTML = ` `
-        while (c <= 10) {
-            let item = document.createElement('option')
-            item.text = `${n} x ${c} = ${n*c}`
-            tab.appendChild(item)
-            c++
+    for (let n in num)
+        if (n == num) {
+            alert `Esse valor ja existe, digite outro!`
         }
+    else {
+        valores.push(num.value)
+        var n = Number(num.value)
+        let c = 1
+        let item = document.createElement('option')
+        item.text = `O valor adicionado foi ${num}`
+        tab.appendChild(item)
+        c++
     }
 }

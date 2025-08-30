@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do dia</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Tabuada</h1>
+        <h1>Analisador de números</h1>
     </header>
     <section>
         <div>
-            <label for="" id="">Número: </label>
+            <label for="" id="">Número de 0 a 100: </label>
             <input type="number" class="text" id="num">
-            <input type="button" value="Verificar" class="botao" onclick="tabuada()">
+            <input type="button" value="Adicionar" class="botao" onclick="adicionar()">
         </div>
         <div>
-            <select name="tabuada" id="seltab" size="10">
+            <select name="tabuada" id="add" size="10">
                 <option>Digite um número acima!</option>
             </select>
         </div>
+        <input type="button" value="Finalizar" class="botao" onclick="finalizar()" id="fim">
     </section>
     <footer>
         <a href="https://github.com/RobertoKFSF" target="_blank">&copy; RobertoKFSF</a>
